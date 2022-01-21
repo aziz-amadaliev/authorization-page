@@ -31,11 +31,14 @@ body{
 #email, #pwd{
     padding: 10px;
     width: 300px;
+    border: 1px solid grey;
+    border-radius: 5px;
 }
 
 label, .remember{
     padding-bottom: 10px;
     padding-top: 10px;
+    font-weight: bold;
 }
 
 .btn{
@@ -46,6 +49,7 @@ label, .remember{
     color: whitesmoke;
     border: none;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn:hover{
