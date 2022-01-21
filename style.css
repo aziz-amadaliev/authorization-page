@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height: 70vh;
+    width: 500px;
+    border: 10px solid rgb(5, 93, 128);
+    border-radius: 5px;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#email, #pwd{
+    padding: 10px;
+    width: 300px;
+}
+
+label, .remember{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.btn{
+    padding: 10px;
+    width: 325px;
+    background-color: rgb(5, 93, 128);
+    font-size: 16px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.forgotPwd{
+    text-align: end;
+}
