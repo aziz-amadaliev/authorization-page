@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Authorization Page</title>
+    <link rel="stylesheet"  href="style.css">
+    <title>Authorization</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="title">
-            <h1>Sign In</h1>
-        </div>
-        <div class="loginInfo">
-            <div class="emailAddress flex">
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" placeholder="Enter email">
+   <div class="center">
+       <h1>Sign In</h1>
+       <form method="post">
+           <div class="txt_field">
+               <input type="text" required>
+               <span></span>
+               <label>Email address</label>
+           </div>
+           <div class="txt_field">
+               <input type="password" required>
+               <span></span>
+               <label>Password</label>
             </div>
-            <div class="password flex">
-                <label for="pwd">Password</label>
-                <input type="text" name="pwd" id="pwd" placeholder="Enter password">
-            </div>
-            <div class="remember">
-                <input type="checkbox" id="checkbox" name="checkbox">
-                <label for="checkbox">Remember me</label>
-            </div>
-            <button class="btn">Submit</button>
-            <div class="forgotPwd">Forgot password?</div>
-        </div>
-    </div>
-
-    <script type="module" src="main.js"></script>
+            <div class="pass"> Forget Password?</div>
+            <input type="submit"  value="Submit">
+            <div class="signup_link"></div>
+       </form>
+   </div>
+    
+      
 </body>
 </html>
