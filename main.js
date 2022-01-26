@@ -12,17 +12,15 @@ const processSignIn = function(event) {
     console.log(email.value, 'line 12')
     console.log(password.value, 'line 13')
 
-    let userEmailJson = localStorage.getItem(email.value);
+    const userEmailJson = localStorage.getItem(email.value);
     console.log(userEmailJson, 'user email info')
 
-    let userDataObj = JSON.parse(userEmailJson);
+    const userDataObj = JSON.parse(userEmailJson);
     console.log(userDataObj, 'user data')
 
     while (signUpElement.firstChild) {
         signUpElement.removeChild(signUpElement.firstChild); //to remove child elements when submit clicked
     }
-
-    
 
     if (email.value === "") {
         result.innerHTML = 'Enter email address';
