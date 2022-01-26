@@ -9,12 +9,12 @@
     <title>Authorization Page</title>
 </head>
 <body>
-    <form class="wrapper signUp-wrapper">
+    <div class="wrapper signUp-wrapper">
         <div class="title">
             <h1>Sign Up</h1>
             <img src="https://www.seytech.co/images/logo.png"  class="image" alt="">
         </div>
-        <div class="loginInfo">
+        <form class="loginInfo">
             <div class="userName flex">
                 <label for="user">User name</label>
                 <input type="text" name="user" class="user" placeholder="Enter user name" required>
@@ -31,8 +31,8 @@
             </div>
             <button type="submit" class="signUpBtn">Sign Up</button>
             <div class="result"></div>
-        </div>
-    </form>
+        </form>
+    </div>
 
     <script type="module" src="./sign-up.js"></script>
 </body>
