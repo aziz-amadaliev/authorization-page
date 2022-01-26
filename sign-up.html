@@ -9,33 +9,31 @@
     <title>Authorization Page</title>
 </head>
 <body>
-    <div class="wrapper">
+    <form class="wrapper signUp-wrapper">
         <div class="title">
-            <h1>Sign In</h1>
+            <h1>Sign Up</h1>
             <img src="https://www.seytech.co/images/logo.png"  class="image" alt="">
         </div>
-        <form class="loginInfo">
+        <div class="loginInfo">
+            <div class="userName flex">
+                <label for="user">User name</label>
+                <input type="text" name="user" class="user" placeholder="Enter user name" required>
+            </div>
             <div class="emailAddress flex">
                 <label for="email">Email address</label>
-                <input type="email" name="" class="email" placeholder="Enter email" required>
+                <input type="email" name="email" class="email" placeholder="Enter email" required>
             </div>
             <div class="password flex">
-                <label for="pwd">Password</label>
-                <input type="password" name="" class="pwd" autocomplete="current-password"  placeholder="Enter password" required>
+                <label for="pwd">Create password</label>
+                <input type="password" name="pwd" class="pwd" autocomplete="current-password"  placeholder="Enter password" required>
                 <i class="far fa-eye" id="togglePassword"></i>
                 
             </div>
-            <div class="remember">
-                <input type="checkbox" id="checkbox" name="checkbox">
-                <label for="checkbox">Remember me</label>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-            <div class="forgotPwd">Forgot <a target="_blank" class="forgotPwd" href="">password</a>?</div>
+            <button type="submit" class="signUpBtn">Sign Up</button>
             <div class="result"></div>
-            <div class="createSignUpBtn"></div>
-        </form>
-    </div>
+        </div>
+    </form>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./sign-up.js"></script>
 </body>
 </html>

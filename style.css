@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +7,8 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: grey;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper{
@@ -16,10 +20,19 @@ body{
     width: 500px;
     border: 10px solid rgb(5, 93, 128);
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 .title{
     margin-top: 15px;
+    display: flex;
+}
+
+.image{
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 60px;
+    width: 70px;
 }
 
 .flex{
@@ -28,7 +41,7 @@ body{
     
 }
 
-#email, #pwd{
+.email, .pwd, .user{
     padding: 10px;
     width: 300px;
     border: 1px solid grey;
@@ -41,7 +54,7 @@ label, .remember{
     font-weight: bold;
 }
 
-.btn{
+.btn, .signUpBtn{
     padding: 10px;
     width: 325px;
     background-color: rgb(5, 93, 128);
@@ -52,10 +65,46 @@ label, .remember{
     font-weight: bold;
 }
 
-.btn:hover{
+.btn, .signUpBtn:hover{
     cursor: pointer;
 }
 
 .forgotPwd{
     text-align: end;
+}
+
+#togglePassword{
+    margin-left: 295px;
+    margin-top: -25px;
+    cursor: pointer;    
+}
+
+.result{
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.signUpTag{
+    text-decoration: none;
+    padding: 7px;
+    background-color: blueviolet;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+}
+
+.signUp-wrapper{
+    border: 10px solid blueviolet;
+}
+
+.signUpBtn{
+    background-color: blueviolet;
+    margin-top: 25px;
+}
+
+.forgotPwd{
+    text-decoration: none;
 }
